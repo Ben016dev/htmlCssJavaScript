@@ -1,0 +1,48 @@
+body{
+	background: linear-gradient(to bottom, #b447a5 0%, #64038a 100%);
+	opacity: 1;
+	color: black;
+        display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+nav {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+main {
+    grid-column: 1/12;
+    grid-row: 2/12;
+}
+
+nav li {
+    grid-column: auto;
+	width: auto;
+	text-align: center;
+    list-style-type: none;
+
+}
+
+
+footer {
+    grid-column: 1/12;
+    grid-row: 12/12;
+}
