@@ -10,10 +10,11 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 
 | Seconds| Who       | Line                                                  | What's on screen |
 |---|---|---|---|
-| 0–4    | Guy       | Augh! This is so frustrating!                         | Guy is sitting at a computer typing |
-| 4–9    | Other guy | Whats wrong? And why are you yelling at the computer? | Other guy walks in concerned to hear Guy yelling |
-| 9-15   | Guy       | Im trying to design a website! But html is so hard!   | Guy turns around complaining to Other guy |
-| 15–17  | Other guy | Then go to Htm-learning and learn more html!          | Other guy is speaking like he is sponsored wrapping up the video |
+| 0–4    | Guy       | Augh! This is so frustrating!                         | Guy is sitting at a computer typing                               |
+| 4–9    | Other guy | Whats wrong? And why are you yelling at the computer? | Other guy walks in concerned to hear Guy yelling                  |
+| 9-15   | Guy       | Im trying to design a website! But html is so hard!   | Guy turns around complaining to Other guy                         |
+| 15–17  | Other guy | Then go to Htm-learning and learn more html!          | Other guy is speaking like he is sponsored wrapping up the video  |
+| 17-20  | Other guy   | BY contiuning from here on out you are both understanding and agreeing that Htm-learning is not responsible for any forms of radiations, cancers, growths, or mutations aquirred during use, nor any forms of hemmorage, pathogens, or stds. Htm-learning is not respomsible for or forms of bodily harm related to light or sounds exposure, nor any cerebal damages. Htm-learning isnt resposible for any forms of blindness, deafness, loss of limbs, amnesia, or in the events of going brain dead. Htm-learning is nor responsible for the loss of life.                        | The logo for htm-learning is on screen while other guys read the disclaimer                                                                                                                                       |
 
 **Word count:** 35 (aim for about 45)
 
