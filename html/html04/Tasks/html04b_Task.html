@@ -39,6 +39,9 @@
     <video width="400" height="300" controls>
       <source src="media/demo.mp4" type="video/mp4">
       <source src="media/demo.webm" type="video/webm">
+      <p>
+        Your browser does not support HTML5 video
+      </p>
     </video>
 
   </section>
@@ -61,7 +64,8 @@
 
     <!-- TODO 2: Add audio element here -->
      <audio controls>
-
+      <source src="media/podcast.mp3" type="audio/mpeg">
+      <source src="media/podcast.ogg" type="audio/ogg">
      </audio>
     ___
 
@@ -85,7 +89,11 @@
     </p>
 
     <!-- TODO 3: Add YouTube iframe here -->
-    ___
+    <iframe src = "https://www.youtube.com/embed/aqz-KE-bpKQ" width = "560" height = "315" title = "Sample Youtube Video" allowfullscreen>
+      <p>
+        Your browser doesnt support iframes
+      </p>
+    </iframe>
 
   </section>
 

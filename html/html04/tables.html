@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style = css>
+        body{
+            background: linear-gradient(to left, red 0%, green 100%);
+        }
+        table, th, td {
+            border: 5px solid black;
+            text-align: center;
+            background-color: red;
+            padding: 20px;
+        }
+        table{
+            padding: 5px;
+        }
+        .day{
+            background-color: lightblue;
+        }
+        .main{
+            background-color: rgb(106, 187, 112);
+        }
+        .side{
+            background-color: rgb(248, 246, 119);
+        }
+        #day{
+            background-color: rgb(255, 255, 255);
+        }
+        #main{
+            background-color: rgb(255, 255, 255);
+        }
+        #side{
+            background-color: rgb(255, 255, 255);
+        }
+        th{
+            font-size: large;
+        }
+        .Off{
+            background-color: rgb(97, 97, 97);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Lunch menu
+    </h1>
+    <table>
+        <caption>
+            Weekly lunch Menu
+        </caption>
+        <tr>
+            <th id = "day">
+                Day
+            </th>
+            <th id = "main">
+                Main
+            </th>
+            <th id = "side">
+                Side
+            </th>
+        </tr>
+        <tr>
+            <td class = "day">
+                Monday
+            </td>
+            <td class = "main">
+                Pizza
+            </td>
+            <td class = "side">
+                Salad
+            </td>
+        </tr>
+        <tr>
+            <td class = "day">
+                Tuesday
+            </td>
+            <td class = "main">
+                Tacos
+            </td>
+            <td class = "side">
+                Rice
+            </td>
+        </tr>
+        <tr>
+            <td class = "day">
+                Weneday
+            </td>
+            <td class = "main">
+                Hamburger
+            </td>
+            <td class = "side">
+                Mashed potatoes
+            </td>
+        </tr>
+        <tr>
+            <td class = "day">
+                Thursday
+            </td>
+            <td class = "main">
+                Lasagna
+            </td>
+            <td class = "side">
+                Garlic bread
+            </td>
+        </tr>
+        <tr>
+            <td class = "day">
+                Friday
+            </td>
+            <td class = "Off" colspan = "2">
+                No School - Holiday
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
