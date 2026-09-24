@@ -1,0 +1,100 @@
+/*step 2: all*/
+*{
+    font-family: Arial, sans-serif;
+}
+
+/*step 3: body*/
+body{
+    background-color: antiquewhite;
+    color: crimson;
+}
+
+/*step 4: h1*/
+h1 {
+    color: blueviolet;
+    font-size: 4rem;
+}
+
+/*step 5: #page-title*/
+#title {
+    background-color: aqua;
+    color: brown;
+    padding: 10px;
+}
+
+/*step 6: h2 and h3*/
+h2, h3 {
+    color: cadetblue;
+}
+
+/*step 7: .note*/
+.note {
+    padding: 10px;
+    background-color: rgba(0, 128, 255, 0.2);
+}
+
+/*step 8: highlight*/
+p.highlight {
+    background-color: azure;
+}
+
+/*step 9: buttons*/
+.btn {
+    padding: 5px;
+    font-size: large;
+    border: 10px;
+}
+
+/*step 9: buttons*/
+.btn-red {
+    background-color: red;
+}
+
+/*step 9: buttons*/
+.btn-green {
+    background-color: rgb(0,255,0);
+}
+
+/*step 9: buttons*/
+.btn-blue {
+    background-color: hsl(251, 100%, 60%);
+}
+
+/*step 10: box*/
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    /*moved up and to the left, closer to the box model text, shortening the margin removed the open space beten the two bringing the box closer*/
+}
+
+/*step 11: .half*/
+.half {
+    width: 50%;
+    background-color: rgb(42, 165, 138);
+}
+
+/*step 12: box*/
+#test{
+    color: green;
+}
+
+/*step 12: box*/
+.test-class{
+    color: blue;
+}
+
+/*step 12: box*/
+p {
+    color: red;
+}
+
+/*step 13: footer*/
+footer p {
+    font-size: small;
+    color: black;
+}
