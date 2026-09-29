@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(153, 153, 153);
+    color: rgb(80, 80, 80);
+    line-height: 1.6;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+a {
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+}
+nav a  {
+    font-weight: bold;
+    margin-right: 16px;
+}
+.highlight {
+    background-color:rgb(255, 255, 75);
+    font-weight: bold;
+    padding: 10px;
+}
+#featured {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+header{
+    font-size: larger
+}
