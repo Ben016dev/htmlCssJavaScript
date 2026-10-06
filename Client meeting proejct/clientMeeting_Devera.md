@@ -25,8 +25,8 @@
 |11| What is your website for (what does your company do)| Get general idea of set up|none|
 |12| Who will I need to contact for additional info or images, will they want updates on progress | just info| none
 |13| What do you know about website design | just info | none
-|14| Timeframe? | Goal info | none |
-15| Anything else you want to say? | Get general idea| none |
+|14| Timeframe? | Goal info | none 
+|15| Anything else you want to say? | Get general idea| none |
 
 ## Part 3: Client Intake Form
 
