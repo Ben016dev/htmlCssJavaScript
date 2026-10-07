@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
 	opacity: 1;
 	color: black;
-    text-decoration: none;
     margin: 0px;
     padding: 0px;
     background: linear-gradient(to right, antiquewhite 91.46%, #389AE5 8.33%);
@@ -20,15 +20,18 @@ ul.no-bullets {
 
 header {
     text-align: center;
-    padding: 1vh;
+    padding: 1vh 0vw 1vh 0vw;
+    margin: 0vh 8.33vw 0vh 0vw;
     height: 8.33vh;
+    width: 1vw;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
+
 
 nav {
     position: fixed;
     text-align: center;
-    padding: 0vh 0vw 52.12vh 91.66vw;
+    padding: 3vh 0vw 52.12vh 90.5vw;
     width: 8.33vw;
     height: 100vh;
 }
@@ -39,12 +42,21 @@ nav {
 
 #two {
     padding: 1.166vh 1.166vw 3.15vh 1.166vw;
-
 }
 
 nav a {
-    padding: 0px;
-    border: none;
+    padding: 1.2vh 1.4vw 1.2vh 1.4vw;
+    margin: 1vh 0vw 1vh 0vw;
+    border-radius: 10px;
+    background-color: #E58338;
+    transition: .5s;
+    color: black;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    padding: 1.5vh 1.75vw 1.5vh 1.75vw;
+    font-size: 1.3rem;
 }
 
 main {
@@ -54,23 +66,16 @@ main {
     background-color: antiquewhite;    
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
     width: 91.67vw;
-}
-
-nav li {
-    width: auto;
-    list-style-type: none;
-    
+    font-size: 1rem;
 }
 
 .small {
-    height: 81vh;
+    height: 78vh;
 }
 
-.test {
-    width: 91.67vw;
-}
+
 
 footer {
-    padding: 4vh .5vw 1.1964vh .5vw;
+    padding: 4vh .5vw 1.4vh .5vw;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
