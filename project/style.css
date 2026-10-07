@@ -1,12 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
 	opacity: 1;
 	color: black;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,1fr);
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(to right, antiquewhite 91.46%, #389AE5 8.33%);
 }
 
 
@@ -17,37 +19,58 @@ ul.no-bullets {
 }
 
 header {
-    grid-column: 1/-1;
-    grid-row: 1/2;
     text-align: center;
-    background: linear-gradient(to right, #389AE5, #E58338);
+    padding: 1vh;
+    height: 8.33vh;
+    background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    padding: 0vh 0vw 52.12vh 91.66vw;
+    width: 8.33vw;
+    height: 100vh;
 }
+
+#one {
+    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
+}
+
+#two {
+    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
+
+}
+
 nav a {
     padding: 0px;
-    margin: 5px;
     border: none;
 }
 
 main {
-    grid-column: 2/12;
-    grid-row: 2/12;
+    margin: 0vh 8.33vw 0vh 0vw;
+    border-left: .5vw solid #E58338;
+    padding: 1vh 5vw 8.33vh 1vw;
+    background-color: antiquewhite;    
+    background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
+    width: 91.67vw;
 }
 
 nav li {
-    grid-column: auto;
-	width: auto;
-	text-align: left;
+    width: auto;
     list-style-type: none;
-
+    
 }
 
+.small {
+    height: 81vh;
+}
+
+.test {
+    width: 91.67vw;
+}
 
 footer {
-    grid-column: 1/12;
-    grid-row: 12/12;
+    padding: 4vh .5vw 1.1964vh .5vw;
+    background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
