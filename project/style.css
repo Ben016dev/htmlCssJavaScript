@@ -6,12 +6,12 @@
 body{
 	opacity: 1;
 	color: black;
+    margin: 0px;
+    padding: 0px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    margin: 0px;
-    padding: 0px;
-    background: linear-gradient(to right, antiquewhite 91.46%, #389AE5 8.33%);
+    background: linear-gradient(to right, #E58338 8.33%, #389AE5 91.66%);
 }
 
 
@@ -23,17 +23,23 @@ ul.no-bullets {
 
 header {
     text-align: center;
-    height: 8.33vh;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
+    grid-column: 1/-1;
+    grid-row: 0/1;
 }
 
+#P {
+    position: sticky;
+    top: 12vh;
+    left: -10.33vw;
+    text-align: center;
+    width: 8.33vw;
+    height: 82.33vh;
+}
 
 nav {
-    position: sticky;
-    top: 10.33vh;
-    left: 3vw;
-    text-align: center;    width: 8.33vw;
-    height: 82.33vh;
+    grid-row: 2/11;
+    grid-column: 1/2;
 }
 
 #one {
@@ -48,7 +54,7 @@ nav a {
     padding: 1.2vh 1.4vw 1.2vh 1.4vw;
     margin: 1vh 0vw 1vh 0vw;
     border-radius: 10px;
-    background-color: #E58338;
+    background-color: #389AE5;
     transition: .5s;
     color: black;
     font-size: 1rem;
@@ -60,11 +66,17 @@ nav a:hover {
 }
 
 main {
-    border-right: .5vw solid #E58338;
-    background-color: antiquewhite;    
+    background-color: antiquewhite;   
+    grid-row: 2/12;
+    grid-column: 2/12;
+    width: 89vw;
+}
+
+main div {
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
-    width: 91.67vw;
     font-size: 1rem;
+    width: 89vw;
+    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
 }
 
 .small {
@@ -73,4 +85,7 @@ main {
 
 footer {
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
+    grid-column: 1/-1;
+    grid-row: 12/12;
+    margin: 1vh 1vw;
 }
