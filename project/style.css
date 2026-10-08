@@ -6,6 +6,9 @@
 body{
 	opacity: 1;
 	color: black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     margin: 0px;
     padding: 0px;
     background: linear-gradient(to right, antiquewhite 91.46%, #389AE5 8.33%);
@@ -20,20 +23,17 @@ ul.no-bullets {
 
 header {
     text-align: center;
-    padding: 1vh 0vw 1vh 0vw;
-    margin: 0vh 8.33vw 0vh 0vw;
     height: 8.33vh;
-    width: 1vw;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
 
 
 nav {
-    position: fixed;
-    text-align: center;
-    padding: 3vh 0vw 52.12vh 90.5vw;
-    width: 8.33vw;
-    height: 100vh;
+    position: sticky;
+    top: 10.33vh;
+    left: 3vw;
+    text-align: center;    width: 8.33vw;
+    height: 82.33vh;
 }
 
 #one {
@@ -60,9 +60,7 @@ nav a:hover {
 }
 
 main {
-    margin: 0vh 8.33vw 0vh 0vw;
-    border-left: .5vw solid #E58338;
-    padding: 1vh 5vw 8.33vh 1vw;
+    border-right: .5vw solid #E58338;
     background-color: antiquewhite;    
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
     width: 91.67vw;
@@ -73,9 +71,6 @@ main {
     height: 78vh;
 }
 
-
-
 footer {
-    padding: 4vh .5vw 1.4vh .5vw;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
 }
