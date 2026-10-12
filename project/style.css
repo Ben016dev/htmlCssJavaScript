@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    font-size: .98vw;
 }
 
 body{
@@ -28,12 +29,15 @@ header {
     grid-row: 0/1;
 }
 
+h1 {
+    font-size: 2vw;
+}
+
 #P {
     position: sticky;
     top: 12vh;
-    left: -10.33vw;
     text-align: center;
-    width: 8.33vw;
+    width: 8.75vw;
     height: 82.33vh;
 }
 
@@ -55,14 +59,13 @@ nav a {
     margin: 1vh 0vw 1vh 0vw;
     border-radius: 10px;
     background-color: #389AE5;
-    transition: .5s;
     color: black;
-    font-size: 1rem;
 }
 
 nav a:hover {
     padding: 1.5vh 1.75vw 1.5vh 1.75vw;
-    font-size: 1.3rem;
+    font-size: 1.274vw;
+    transition: .5s;
 }
 
 main {
@@ -76,11 +79,7 @@ main div {
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
     font-size: 1rem;
     width: 89vw;
-    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
-}
-
-.small {
-    height: 78vh;
+    padding: 1.166vh 1.166vw 0px 1.166vw;
 }
 
 footer {
