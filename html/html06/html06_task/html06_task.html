@@ -18,7 +18,6 @@
                                    Delete this line before you turn the task in.) */
                                    * {
                                     box-sizing: border-box;
-                                    outline: 1px solid red;
                                    }
 
     /* ===== Already done for you ===== */
@@ -265,6 +264,7 @@
         text-decoration: none;
         border-radius: 4px;
     }
+
   </style>
 </head>
 <body>
@@ -278,11 +278,14 @@
   </header>
 
   <main>
+    <div id = "fix">
+
+    </div>
     <!-- Intro card -->
-    <section class="intro" id="intro" id = "top">
+    <section class="intro" id="intro">
       <h2>What Is the Box Model?</h2>
       <p>Every element is a box with four layers: content, padding, border, and margin. Padding is space inside the border. Margin is space outside the border.</p>
-      <p>This paragraph should be hidden when you are done.</p>
+      <p class = "hidden">This paragraph should be hidden when you are done.</p>
     </section>
 
     <!-- Three boxes with different spacing -->
@@ -329,7 +332,7 @@
   <footer>
     <p>&copy; 2026 Medina County Career Center</p>
   </footer>
-  <a href = "#top" class = "to-top">
+  <a href = "#fix" class = "to-top">
     Back to top
   </a>
 </body>
