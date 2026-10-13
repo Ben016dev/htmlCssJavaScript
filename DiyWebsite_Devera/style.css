@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    font-size: .98vw;
 }
+
+/*    outline: 1px solid red;*/
 
 body{
 	opacity: 1;
@@ -12,9 +13,8 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    background: linear-gradient(to right, #E58338 8.33%, #389AE5 91.66%);
+    background-color: antiquewhite;
 }
-
 
 ul.no-bullets {
   list-style-type: none;
@@ -29,62 +29,78 @@ header {
     grid-row: 0/1;
 }
 
-h1 {
-    font-size: 2vw;
-}
-
 #P {
     position: sticky;
     top: 12vh;
     text-align: center;
     width: 8.75vw;
-    height: 82.33vh;
 }
 
 nav {
-    grid-row: 2/11;
+    grid-row: 2/12;
     grid-column: 1/2;
+    background-color: #E58338;
 }
 
 #one {
     padding: 1.166vh 1.166vw 3.15vh 1.166vw;
+    margin: 0vh 2vw 5vh 0vw;
 }
 
 #two {
     padding: 1.166vh 1.166vw 3.15vh 1.166vw;
+    margin: 0vh 2vw 5vh 0vw;
 }
 
 nav a {
-    padding: 1.2vh 1.4vw 1.2vh 1.4vw;
-    margin: 1vh 0vw 1vh 0vw;
+    padding: 1.2vh 1.3vw 1.2vh 1.4vw;
     border-radius: 10px;
     background-color: #389AE5;
     color: black;
 }
 
 nav a:hover {
-    padding: 1.5vh 1.75vw 1.5vh 1.75vw;
-    font-size: 1.274vw;
+    padding: 1.5vh 1.60vw 1.5vh 1.75vw;
     transition: .5s;
 }
 
 main {
-    background-color: antiquewhite;   
     grid-row: 2/12;
     grid-column: 2/12;
-    width: 89vw;
-}
-
-main div {
+    width: 90.38vw;
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
     font-size: 1rem;
-    width: 89vw;
     padding: 1.166vh 1.166vw 0px 1.166vw;
+    border-right: 1vw solid #389AE5;
+}
+
+.image {    
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    background-color: #E58338;
+    padding: 10px 10px 5px 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.image p {
+    margin: 0px;
+    border: 2px solid black;
+    background-color: #389AE5;
+}
+
+.image img {
+    border: 2px solid black;
 }
 
 footer {
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
     grid-column: 1/-1;
     grid-row: 12/12;
-    margin: 1vh 1vw;
+}
+
+#surely {
+    padding: 2vh 0px 0px 1vw;
 }
