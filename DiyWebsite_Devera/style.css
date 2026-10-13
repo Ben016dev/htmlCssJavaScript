@@ -33,18 +33,23 @@ header {
     position: sticky;
     top: 12vh;
     text-align: center;
-    width: 8.75vw;
+    width: 6.75vw;
+    margin: 0vh 1vw 0vh .5vw;
+    padding: 1vh 0vw;
+    background-color: antiquewhite;
+    box-sizing: border-box;
 }
 
 nav {
     grid-row: 2/12;
     grid-column: 1/2;
+    width: 8.75vw;
     background-color: #E58338;
 }
 
 #one {
     padding: 1.166vh 1.166vw 3.15vh 1.166vw;
-    margin: 0vh 2vw 5vh 0vw;
+    margin: 3vh 2vw 5vh 0vw;
 }
 
 #two {
