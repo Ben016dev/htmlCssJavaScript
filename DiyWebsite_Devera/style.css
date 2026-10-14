@@ -33,7 +33,7 @@ header {
     position: sticky;
     top: 12vh;
     text-align: center;
-    width: 6.75vw;
+    width: 7.5vw;
     margin: 0vh 1vw 0vh .5vw;
     padding: 1vh 0vw;
     background-color: antiquewhite;
@@ -48,24 +48,26 @@ nav {
 }
 
 #one {
-    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
-    margin: 3vh 2vw 5vh 0vw;
+    padding: 3vh .5vw 3.15vh .5vw;
+    margin: 3vh .5vw 2.5vh .5vw;
+    border: 3px solid #E58338;
 }
 
 #two {
-    padding: 1.166vh 1.166vw 3.15vh 1.166vw;
-    margin: 0vh 2vw 5vh 0vw;
+    padding: 3vh .5vw 3.15vh .5vw;
+    margin: 3vh .5vw 5vh .5vw;
+    border: 3px solid #E58338;
 }
 
 nav a {
-    padding: 1.2vh 1.3vw 1.2vh 1.4vw;
+    padding: 1.2vh 1vw 1.2vh 1.1vw;
     border-radius: 10px;
     background-color: #389AE5;
     color: black;
 }
 
 nav a:hover {
-    padding: 1.5vh 1.60vw 1.5vh 1.75vw;
+    padding: 1.5vh 1.25vw 1.5vh 1.4vw;
     transition: .5s;
 }
 
