@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Viewport tag: explained in Step 11 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>html07 Walkthrough</title>
+  <title>html07 Flexbox</title>
   <style>
     * { box-sizing: border-box; }
 
@@ -20,20 +19,70 @@
       padding: 1rem;
     }
 
-    .cards {
-        display: flex;
-        justify-content: space-between;
+    /* ===== Your CSS goes below this line ===== */
+
+    .navbar {
+      display: flex;
+      padding: 1rem 2rem;
+      background-color: #2C3E50;
+      justify-content: space-between;
+      height: 5rem;
+      align-items: center;
     }
 
-    .card{
-        
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    /* Your walkthrough CSS goes below this line */
+
+    .nav-links a {
+      color: #2C3E50;
+      text-decoration: none;
+      background-color: #fff;
+      padding: .5rem;
+      border-radius: 5px;
+    }
+
+    .nav-links a:hover {
+      background-color: #2C3E50;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    .card {
+      flex: 1;
+      padding: 1.5rem;
+      border: 2px solid #2C3E50;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery img {
+      flex: 1;
+      min-width: 12rem;
+    }
 
   </style>
 </head>
 <body>
-  <!-- Nav bar: two flex items (the logo and the links group) -->
+  <!-- Nav bar: two items (the logo and the links group) -->
   <nav class="navbar">
     <div class="logo">My Site</div>
     <div class="nav-links">
@@ -47,21 +96,21 @@
   <main>
     <h1>Flexbox Practice</h1>
 
-    <!-- Three cards: will sit in a row -->
+    <!-- Three cards -->
     <div class="cards">
       <div class="card"><h2>Fast</h2><p>Loads quickly on any device.</p></div>
       <div class="card"><h2>Clean</h2><p>Easy to read and easy to use.</p></div>
       <div class="card"><h2>Responsive</h2><p>Works on phones, tablets, and desktops.</p></div>
     </div>
 
-    <!-- Six photos: will wrap onto more than one row -->
+    <!-- Six photos -->
     <div class="gallery">
-      <img src="images/flex-1.png" alt="Sample photo 1">
-      <img src="images/flex-2.png" alt="Sample photo 2">
-      <img src="images/flex-3.png" alt="Sample photo 3">
-      <img src="images/flex-4.png" alt="Sample photo 4">
-      <img src="images/flex-5.png" alt="Sample photo 5">
-      <img src="images/flex-6.png" alt="Sample photo 6">
+      <img src="images/photo-1.png" alt="Sample photo 1">
+      <img src="images/photo-2.png" alt="Sample photo 2">
+      <img src="images/photo-3.png" alt="Sample photo 3">
+      <img src="images/photo-4.png" alt="Sample photo 4">
+      <img src="images/photo-5.png" alt="Sample photo 5">
+      <img src="images/photo-6.png" alt="Sample photo 6">
     </div>
   </main>
 </body>
