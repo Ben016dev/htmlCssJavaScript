@@ -13,8 +13,10 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    background: linear-gradient(to right, antiquewhite 98%, #389AE5 2%);
     background-color: antiquewhite;
 }
+
 
 ul.no-bullets {
   list-style-type: none;
@@ -27,13 +29,14 @@ header {
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
     grid-column: 1/-1;
     grid-row: 0/1;
+    width: 97.5vw;
 }
 
 #P {
     position: sticky;
     top: 12vh;
     text-align: center;
-    width: 7.5vw;
+    width: 10vw;
     margin: 0vh 1vw 0vh .5vw;
     padding: 1vh 0vw;
     background-color: antiquewhite;
@@ -43,8 +46,8 @@ header {
 nav {
     grid-row: 2/12;
     grid-column: 1/2;
-    width: 8.75vw;
     background-color: #E58338;
+    width: 11vw;
 }
 
 #one {
@@ -60,10 +63,15 @@ nav {
 }
 
 nav a {
-    padding: 1.2vh 1vw 1.2vh 1.1vw;
+    padding: 1.2vh .40vw 1.2vh .40vw;
     border-radius: 10px;
     background-color: #389AE5;
     color: black;
+    font-size: 1.75vw;
+}
+
+#G {
+    font-size: 1.5vw;
 }
 
 nav a:hover {
@@ -74,7 +82,7 @@ nav a:hover {
 main {
     grid-row: 2/12;
     grid-column: 2/12;
-    width: 90.38vw;
+    width: 86.6vw;
     background: linear-gradient(to bottom, #389ae556 8.33%, #E583382f 91.66%);
     font-size: 1rem;
     padding: 1.166vh 1.166vw 0px 1.166vw;
@@ -82,7 +90,6 @@ main {
 }
 
 .image {    
-    display: inline-block;
     vertical-align: top;
     margin: 0px;
     padding: 0px;
@@ -90,6 +97,18 @@ main {
     padding: 10px 10px 5px 10px;
     border: 2px solid black;
     text-align: center;
+}
+
+#p1 {
+    max-width: 350px;
+}
+
+#p2 {
+    max-width: 400px;
+}
+
+#p3 {
+    max-width: 600px;
 }
 
 .image p {
@@ -106,8 +125,37 @@ footer {
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
     grid-column: 1/-1;
     grid-row: 12/12;
+    width: 97.5vw;
 }
 
 #surely {
     padding: 2vh 0px 0px 1vw;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery figure {
+  flex: 1;
+  min-width: 15rem;
+  margin: 0;
+  max-width: 600px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+    /*Ive been using vw and vh, so I think it should scale properly on mobile? Im not too sure, nor can I really check*/
 }
