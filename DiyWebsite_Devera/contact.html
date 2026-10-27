@@ -63,6 +63,37 @@
         </a>
         </p>
         </div>
+        <section id="contact-us">
+        <h2>Send Us a Message</h2>
+        <p>
+            Fill out the form below. Fields marked * are required.
+        </p>
+
+        <form id="contact-form" action="#" method="get">
+        
+            <fieldset>
+                <legend>About You</legend>
+
+                <!-- Keep these three ids: name, email, message (message is in 2d). Lesson 09 uses them. -->
+                <label for="name">Name: *</label>
+                <input type="text" id="name" name="name" placeholder="First and last name" required>
+
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <!-- Phone is optional, so no required -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="330-555-0100">
+
+                <!-- OPTIONAL: a date input, if it fits your site (a booking date, a visit date).
+                     Or a number input (party size, number of pets). Delete this if it doesn't fit. -->
+                <label for="visitDate">Preferred Date:</label>
+                <input type="date" id="visitDate" name="visitDate">
+            </fieldset>
+          <!-- Parts 2b - 2e go in here -->
+        
+        </form>
+</section>
     </main>
     <footer class = "temp">
         <div id = "surely">
