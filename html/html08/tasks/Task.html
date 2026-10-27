@@ -27,13 +27,22 @@
        - background-color: #f5f5f5
     */
     /* YOUR CODE HERE */
-
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
     /* TODO 11: Style the h1
        - color: #333
        - text-align: center
     */
     /* YOUR CODE HERE */
-
+    h1 {
+      color: #333;
+      text-align: center;
+    }
     /* TODO 12: Style the form (make it a white card)
        - background-color: white
        - padding: 25px
@@ -41,7 +50,12 @@
        - box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
     */
     /* YOUR CODE HERE */
-
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
     /* TODO 13: Style fieldset
        - border: 1px solid #ddd
        - border-radius: 5px
@@ -50,7 +64,13 @@
        - background-color: #fafafa
     */
     /* YOUR CODE HERE */
-
+    fieldset {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #fafafa;
+    }
     /* TODO 14: Style legend
        - font-weight: bold
        - font-size: 1.1rem
@@ -58,7 +78,12 @@
        - padding: 0 8px
     */
     /* YOUR CODE HERE */
-
+    legend {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+      padding: 0 8px;
+    }
     /* TODO 15: Style label (each label on its own line, above its box)
        - display: block
        - margin-top: 10px
@@ -67,13 +92,21 @@
        - color: #333
     */
     /* YOUR CODE HERE */
-
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
     /* TODO 16: Make the radio and checkbox labels plain
        - Select the class .choice
        - font-weight: normal
     */
     /* YOUR CODE HERE */
-
+    .choice {
+      font-weight: normal
+    }
     /* TODO 17: Style the text-style boxes, the dropdown, and the textarea.
        Use this selector list (NOT radio or checkbox):
          input[type="text"], input[type="email"], input[type="password"],
@@ -88,7 +121,15 @@
        - box-sizing: border-box
     */
     /* YOUR CODE HERE */
-
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
     /* TODO 18: Style the :focus state
        Selector list: input:focus, select:focus, textarea:focus
        - outline: none
@@ -96,7 +137,11 @@
        - box-shadow: 0 0 5px rgba(0, 123, 255, 0.4)
     */
     /* YOUR CODE HERE */
-
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+    }
     /* TODO 19: Style the buttons
        a) .button-group
           - text-align: center
@@ -120,7 +165,31 @@
           - background-color: #545b62
     */
     /* YOUR CODE HERE */
-
+    .button-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 12px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    button[type="reset"] {
+      background-color: #6c757d;
+    }
+    button[type="reset"]:hover {
+      background-color: #545b62;
+    }
     /* TODO 20: Add a media query for small screens
        @media (max-width: 600px)
          button:
@@ -129,6 +198,13 @@
            - margin: 10px 0
     */
     /* YOUR CODE HERE */
+      @media (max-width: 600px) {
+         button{
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+         }
+      }
   </style>
 </head>
 <body>
@@ -161,6 +237,7 @@
          Start Date:      date       startDate    required
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
      <legend>
         Camper Information:
      </legend>
@@ -193,6 +270,7 @@
         Start Date
     </label>
     <input type="date" id="startDate" name="startDate" required>
+    </fieldset>
     <!-- TODO 3: Make a fieldset with the legend "T-Shirt Size".
          Add 4 radio buttons. Put each <input> INSIDE its <label>,
          and give each label class="choice".
@@ -202,29 +280,31 @@
          - Put required on the first radio button
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
     <legend>
        T-shirt Size
     </legend>
 
     <label class="choice">
         Small
-    <input type="radio" name="shirtSize" value="Small" required>
+    <input type="radio" name="shirtSize" required>
     </label>
     
     <label class="choice">
         Medium
-    <input type="radio" name="shirtSize" value="Medium">
+    <input type="radio" name="shirtSize">
     </label>
     
     <label class="choice">
         Large
-    <input type="radio" name="shirtSize" value="Large">
+    <input type="radio" name="shirtSize">
     </label>
     
     <label class="choice">
         X-Large
-    <input type="radio" name="shirtSize" value="X-Large">
+    <input type="radio" name="shirtSize">
     </label>
+    </fieldset>
     <!-- TODO 4: Make a fieldset with the legend "What do you want to learn?".
          Add 5 checkboxes. Put each <input> INSIDE its <label>,
          and give each label class="choice".
@@ -233,34 +313,36 @@
            python (Python), games (Game Design), robots (Robotics)
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
     <legend>
        What do you want to learn
     </legend>
 
     <label class="choice">
-        Html
-    <input type="checkbox" name="topica" value="(Html and CSS)">
+        Html (HTML and CSS)
+    <input type="checkbox" name="topica">
     </label>
 
     <label class="choice">
-        Javascript
-    <input type="checkbox" name="topica" value="(Javascript)">
+        Javascript 
+    <input type="checkbox" name="topica">
     </label>
 
     <label class="choice">
         Python
-    <input type="checkbox" name="topica" value="(Python)">
+    <input type="checkbox" name="topica">
     </label>
 
     <label class="choice">
-        Games
-    <input type="checkbox" name="topica" value="(Game Design)">
+        Games (Game Design)
+    <input type="checkbox" name="topica">
     </label>
 
     <label class="choice">
-        Robots
-    <input type="checkbox" name="topica" value="(Robotics)">
+        Robots (Robotics)
+    <input type="checkbox" name="topica">
     </label>
+    </fieldset>
     <!-- TODO 5: Make a fieldset with the legend "Contact and Comments".
          a) A label "Best way to reach you:" and a select with id="contact" and name="contact".
             Options (value / text):
@@ -275,21 +357,51 @@
             maxlength="500", placeholder="Allergies, questions, or anything else"
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
+     <label>
+      Best way to reach you:
+     </label>
+     <select id="contact" name="contact" required>
+      <option value="">
+         -- Choose one --
+      </option>
+      <option value="email">
+         Email
+      </option>
+      <option value="phone">
+         Phone call
+      </option>
+      <option value="text">
+         Text message
+      </option>
+      <option value="mail">
+         Postal mail
+      </option>
+     </select>
+     <label>
+      Anything else we should know?
+     </label>
+     <textarea id="comments", name="comments", rows="5", cols="40", maxlength="500", placeholder="Anything at all?">
 
+     </textarea>
+     </fieldset>
     <!-- TODO 6: After the last fieldset, add a div with class="button-group".
          Inside it put:
          - a submit button with the text "Register"
          - a reset button with the text "Clear Form"
     -->
     <!-- YOUR CODE HERE -->
-
+     <div class="button-group">
+      <input type="submit" placeholder="Register">
+      <input type="reset" placeholder="Clear Form">
+     </div>
     <!-- TODO 7: Tab order.
          The link below has tabindex="1", so the Tab key jumps to it FIRST,
          before any form box. Press Tab from the top of the page to see it.
          Remove tabindex="1" so the link is reached in normal order.
          (Keep the link. Just delete the tabindex attribute.)
     -->
-    <p><a href="mailto:camp@example.com" tabindex="1">Questions? Email the camp director.</a></p>
+    <p><a href="mailto:camp@example.com">Questions? Email the camp director.</a></p>
 
   <!-- TODO 8: Close the form -->
   <!-- YOUR CODE HERE -->
@@ -301,11 +413,11 @@
        d) Why do we use action="#" right now?
        e) Why should a form with a password never use method="get"?
 
-       a)
-       b)
-       c)
-       d)
-       e)
+       a) Give a string of text for screen readers to read off
+       b) So that only one can be selected
+       c) Method get puts the information in the browser url, post sends it to a server only
+       d) We dont have a server to send the informstion to
+       e) The password will be visible in the url
   -->
 
   <!-- ================= PART 3: TEST ================= -->
