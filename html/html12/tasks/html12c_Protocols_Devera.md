@@ -14,18 +14,18 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Situation | Protocol |
 |---|---|
-| You type `example.com` and your computer needs its IP address | |
-| You upload your website's files to a web host | |
-| You log in to your bank's website | |
-| A server sends a plain web page to your browser | |
-| Packet 7 of a file never arrived, so it gets sent again | |
-| Each packet needs an address so it reaches the right computer | |
-| You upload files to a server and want the transfer encrypted | |
+| You type `example.com` and your computer needs its IP address | DNS |
+| You upload your website's files to a web host | FTP |
+| You log in to your bank's website | HTTPS |
+| A server sends a plain web page to your browser | HTTP |
+| Packet 7 of a file never arrived, so it gets sent again | TCP |
+| Each packet needs an address so it reaches the right computer | IP |
+| You upload files to a server and want the transfer encrypted | SFTP |
 
 **b.** In your own words, what is a protocol? Give an example from everyday life of two people following the same "rules" so they understand each other.
 
 **Answer:**
-
+A way for computers to communicate to one another, each protocol has its own rules. A rule for humans would be like if a specific gesture meant to speak quieter so others dont hear.
 
 ## 2. IP addresses and DNS
 
@@ -33,22 +33,23 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Address | Valid? | Reason |
 |---|---|---|
-| `192.168.0.1` | | |
-| `10.0.300.5` | | |
-| `172.16.4` | | |
-| `8.8.8.8` | | |
+| `192.168.0.1` | valid | breaks neither rule |
+| `10.0.300.5` | not | 300 > 255 |
+| `172.16.4` | not | 3 numbers only |
+| `8.8.8.8` | valid | breaks neither rule |
 
 **d.** DNS is called the internet's "phone book." Explain why that comparison makes sense.
 
 **Answer:**
-
+Because each server (each computer) has a unique ip adress, the same how each person/house would have a unique phone number
 
 ## 3. Packets
 
 **e.** A photo is sent across the internet. It is split into 20 packets, and they take different paths. Packet 12 arrives last and packet 5 never arrives at all. Explain what happens, and which protocol handles it.
 
 **Answer:**
-
+IP checks to make sure each packet is sending to the oroper location.
+TCP checks to make sure each packet arrives to there destinations, if they dont it will send any that dont again.
 
 ## 4. HTTP and HTTPS
 
@@ -56,26 +57,26 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Situation | Status code |
 |---|---|
-| The page loaded fine | |
-| You typed a page name that does not exist | |
-| Something broke on the server | |
+| The page loaded fine | 200 |
+| You typed a page name that does not exist | 404 |
+| Something broke on the server | 500 |
 
 **g.** A website has a login form but uses `http://` instead of `https://`. What is the risk? What would the browser show?
 
 **Answer:**
-
+Https is safer because it encrypts the code for the page, not using it risks anyone who intercepts the page being able to read it.
 
 **h.** What do SSL and TLS have to do with HTTPS? Which one is newer?
 
 **Answer:**
-
+They are certificates proving a website to be legitimate, shown by the lock beside the url. Tls is newer
 
 ## 5. FTP
 
 **i.** What is FTP used for in web design? Why is SFTP a better choice than plain FTP?
 
 **Answer:**
-
+File Transfer protocol, it moves files from the user's device to the server, including html, css, images. SFTP is secure because its enccrypted, its safer to use
 
 ## 6. The parts of a URL
 
@@ -85,28 +86,28 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Part | Answer |
 |---|---|
-| Protocol | |
-| Subdomain | |
-| Domain name | |
-| Top-level domain (TLD) | |
-| Path | |
-| File name | |
+| Protocol | https:// |
+| Subdomain | www |
+| Domain name | medinapets |
+| Top-level domain (TLD) | .com |
+| Path | /dogs/ |
+| File name | grooming.html |
 
-`http://library.example.edu/books/index.html`
+`http://library.edu/books/index.html`
 
 | Part | Answer |
 |---|---|
-| Protocol | |
-| Subdomain | |
-| Domain name | |
-| Top-level domain (TLD) | |
-| Path | |
-| File name | |
+| Protocol | https:// |
+| Subdomain | www |
+| Domain name | library |
+| Top-level domain (TLD) | .edu |
+| Path | books |
+| File name | index.html |
 
 **k.** Is the second URL secure? How can you tell?
 
 **Answer:**
-
+No, http instead of https
 
 ## 7. Putting it together
 
@@ -114,24 +115,24 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Order | Step |
 |---|---|
-| | The browser puts the packets back together and draws the page |
-| | DNS finds the server's IP address |
-| | The browser sends an HTTPS request for the page |
-| | TCP/IP opens a connection to the server |
-| | The server sends back the HTML, CSS, and images in packets |
+| 5 | The browser puts the packets back together and draws the page |
+| 1 | DNS finds the server's IP address |
+| 2 | The browser sends an HTTPS request for the page |
+| 3 | TCP/IP opens a connection to the server |
+| 4 | The server sends back the HTML, CSS, and images in packets |
 
 **m.** FTP is not one of those steps. When does FTP get used instead?
 
 **Answer:**
-
+When uploading a site
 
 ## Closing 12c — Vocabulary
 
 | Term | Your definition |
 |---|---|
-| Protocol | |
-| IP address | |
-| DNS | |
-| Packet | |
-| HTTPS | |
-| URL | |
+| Protocol | rules for communication between servers and devices |
+| IP address | The unqiue string that correlates to a server/device for communication between them |
+| DNS | The sustem that turns a domain name into an ip adress and the other way around |
+| Packet | A chunk of data broken up from a longer piece, reassembled once sent to the device that requested the larger piece |
+| HTTPS | The protocol that loads a website |
+| URL | The link for a site that combines the different parts needed to specify that site being, Protocol, Subdomain, Domain name, Top-level domain, Path, and File name in that order.
