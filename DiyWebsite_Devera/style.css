@@ -111,7 +111,13 @@ main {
     max-width: 600px;
 }
 
-.image p {
+.imageText {
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    padding: 10px 10px 5px 10px;
+    border: 2px solid black;
+    text-align: center;
     margin: 0px;
     border: 2px solid black;
     background-color: #389AE5;
@@ -156,6 +162,100 @@ video {
   height: auto;
 }
 
+#formButton {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    font-size: 18px
+}
+
+#contact-form {
+  max-width: 600px;
+  background-color: white;       /* use your card background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* Section boxes and their titles */
+#contact-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+#contact-form legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+/* Each label on its own line, above its box */
+#contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Radio and checkbox labels: plain, not bold */
+#contact-form .choice {
+  font-weight: normal;
+}
+
+/* Text-style boxes, the dropdown, and the textarea (not radios or checkboxes) */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="number"],
+#contact-form input[type="date"],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;          /* same font as the rest of your site */
+  box-sizing: border-box;        /* width includes padding and border */
+}
+
+/* The box the cursor is in: must still be easy to see */
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;         /* use your accent color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Buttons */
+#contact-form button {
+  padding: 12px 20px;
+  margin: 5px 5px 0 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;     /* use your accent color */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;     /* a darker version of your accent color */
+}
+
+/* Reset looks less important than submit */
+#contact-form button[type="reset"] {
+  background-color: #6c757d;
+}
+
 @media (max-width: 768px) {
     /*Ive been using vw and vh, so I think it should scale properly on mobile? Im not too sure, nor can I really check*/
+    /* Small screens: full-width buttons, easier to tap */
+  #contact-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
