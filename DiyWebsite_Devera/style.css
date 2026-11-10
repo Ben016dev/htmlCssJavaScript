@@ -28,7 +28,7 @@ header {
     text-align: center;
     background: linear-gradient(to left, #389AE5 8.33%, #E58338 91.66%);
     grid-column: 1/-1;
-    grid-row: 0/1;
+    grid-row: 1/1;
     width: 97.5vw;
 }
 
@@ -111,13 +111,7 @@ main {
     max-width: 600px;
 }
 
-.imageText {
-    vertical-align: top;
-    margin: 0px;
-    padding: 0px;
-    padding: 10px 10px 5px 10px;
-    border: 2px solid black;
-    text-align: center;
+.image p {
     margin: 0px;
     border: 2px solid black;
     background-color: #389AE5;
@@ -251,11 +245,31 @@ video {
   background-color: #6c757d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 775px) {
     /*Ive been using vw and vh, so I think it should scale properly on mobile? Im not too sure, nor can I really check*/
     /* Small screens: full-width buttons, easier to tap */
   #contact-form button {
     width: 100%;
     margin: 5px 0;
   }
+
+  nav {
+    width: 100px;
+}
+
+main div{
+    width: 60vw;
+    padding-left: 10px;
+}
+
+#P {
+    position: sticky;
+    top: 12vh;
+    text-align: center;
+    width: 100px;
+    margin: 0vh 1vw 0vh .5vw;
+    padding: 1vh 0vw;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
 }
